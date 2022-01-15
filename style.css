@@ -1,0 +1,133 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.influencer{
+    margin-left: 30px;
+}
+.flex-container{
+    display: flex;
+    margin-bottom: 100px;
+    margin-left: 20px;
+}
+.width{
+    
+        width: 60%;
+        padding: 10px;
+    }
+.button{
+        text-decoration: none;
+        background-color: rgb(212, 38, 73);
+        padding:5px 20px;
+        color:white;
+        font-weight: 700;
+        border-radius: 50px;
+}
+.button1{
+    text-decoration: none;
+    background-color: rgb(212, 38, 73);
+    padding:5px 20px;
+    color:white;
+    font-weight: 700;
+    border-radius: 0;
+}
+.collection{
+    align-items: center;
+}
+.center{
+    text-align: center;
+    font-size: 23px;
+    color: rgb(54, 47, 47);
+}
+.equipment{
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 20px;
+}
+.element{
+    background-color: #f8f7f7;
+    border-radius: 10px;
+    /* box-shadow: 2px 2px; */
+    border: 2px solid white;
+}
+.element .element-picture img{
+    width: 350px;
+    height: 300px;
+}
+.element .element-picture{
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.element-name{
+    margin-left: 20px;
+}
+.element-rate{
+    margin-left: 20px;
+}
+.element-info{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #b4b3b3;
+}
+.header-info{
+    margin-left: 20px;
+    font-size: 13px;
+    color: rgb(54, 47, 47);
+}
+.see-more{
+    text-decoration: none;
+    color: rgb(212, 38, 73);
+    float: right;
+
+}
+
+.foot{
+    
+    text-align: center;
+    position: bottom;
+	background-color: rgb(16, 6, 31);
+	width: 100%;
+	color: white;
+}
+footer p{
+    text-align: center;
+	font-size: 12px;
+	left: 48%;
+	bottom: 200px;
+	color: white;
+}
+@media only screen and (max-width:688px) {
+    .flex-container{
+        width: 100%;
+ }
+    .element, .equipment{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media only screen and (min-width:688px) and (max-width:992px)
+{
+    .flex-container{
+        width: 100%;
+    }
+    .element, .equipment{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
